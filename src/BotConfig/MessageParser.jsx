@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 class MessageParser {
     constructor(actionProvider) {
@@ -10,6 +10,9 @@ class MessageParser {
 
         if (lowerCaseMessage.includes("hello")) {
             this.actionProvider.greet()
+        }
+        if (lowerCaseMessage.includes("javascript")) {
+            this.actionProvider.handleJavascriptList();
         }
     }
 }

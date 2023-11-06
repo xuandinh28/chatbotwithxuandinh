@@ -3,14 +3,14 @@ import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css';
 import { ConditionallyRender } from "react-util-kit";
 
-import config from './Bot/config';
-import MessageParser from './Bot/MessageParser';
-import ActionProvider from './Bot/ActionProvider';
+import config from './BotConfig/config';
+import MessageParser from './BotConfig/MessageParser';
+import ActionProvider from './BotConfig/ActionProvider';
 import { useState } from 'react';
 import { ReactComponent as ButtonIcon } from './Icons/robot.svg';
-import GradientBackground from './components/GradientBackground/GradientBackground.jsx'
-import Menu from './components/Menu/Menu.jsx';
-// import ExampleSection from './components/PageSections/ExampleSection.jsx'
+import GradientBackground from './Components/Pages/GradientBackground/GradientBackground.jsx'
+import Menu from './Components/Pages/Menu/Menu.jsx';
+// import ExampleSection from './Components/PageSections/ExampleSection.jsx'
 
 function App() {
   const [showChatbot, toggleChatbot] = useState(true);

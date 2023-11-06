@@ -1,12 +1,11 @@
 import React from "react";
-
 import "./Menu.css";
 
 const Menu = () => {
     return (
         <div className="menu">
             <a
-                href="https://github.com/FredrikOseberg/react-chatbot-kit"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="menu-link"

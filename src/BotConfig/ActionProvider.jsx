@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 class ActionProvider {
     constructor(createChatBotMessage, setStateFunc) {
@@ -10,6 +10,16 @@ class ActionProvider {
         const greetingMessage = this.createChatBotMessage("Hi, friend.")
         this.updateChatbotState(greetingMessage)
     }
+    handleExampleSection = () => {
+        const message = this.createChatBotMessage(
+            "Fantastic, I've got the following resources for you on Javascript:",
+            {
+                widget: "JavaScriptLinks",
+            }
+        );
+
+        this.updateChatbotState(message);
+    };
 
     updateChatbotState(message) {
 
@@ -17,8 +27,9 @@ class ActionProvider {
 
 
         this.setState(prevState => ({
-            ...prevState, messages: [...prevState.messages, message]
-        }))
+            ...prevState, 
+            messages: [...prevState.messages, message]
+        }));
     }
 }
 
