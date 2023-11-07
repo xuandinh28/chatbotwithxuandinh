@@ -1,0 +1,117 @@
+.app-config-section {
+    display: flex;
+    min-height: 100vh;
+}
+
+.app-config-section-gist-container {
+    width: 50%;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.app-config-section-docs-inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app-config-section-docs-container {
+    width: 50%;
+    padding: 50px;
+    background-color: #f1f1f1;
+}
+
+.app-config-section-icon {
+    fill: #4e9d89;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+.app-config-section-docs-list {
+    list-style-type: none;
+}
+
+.app-config-section-docs-listitem {
+    position: relative;
+    margin: 20px 0;
+}
+
+.app-config-section-docs-listitem::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    background-color: #4e9d89;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+}
+
+.app-container-navbar {
+    padding: 25px;
+    background-color: #000000;
+    /* max-width: 400px; */
+    /* width: 400px; */
+    max-width: 100%;
+    width: 100%;
+    min-height: 10px;
+    height: 5%;
+    border-radius: 3px;
+    text-align: left;
+    margin: 0.8rem 0;
+}
+
+
+
+@media (max-width: 1000px) {
+    .app-config-section {
+        flex-direction: column;
+    }
+
+    .app-config-section-gist-container {
+        width: auto;
+        padding: 20px;
+    }
+
+    .app-config-section-docs-container {
+        width: auto;
+        padding: 20px;
+    }
+}
+
+.head-info {
+
+}
+.column {
+    float: left;
+    width: 10%;
+    max-width: auto;
+    padding: 10px;
+    height: auto;
+    /* height: 20px; */
+    /* background-color: #c8b4b4; */
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.schedule {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex: auto;
+    font-family: Nunito Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    letter-spacing: 3px;
+    margin: 0 40px;
+    position: relative;
+}

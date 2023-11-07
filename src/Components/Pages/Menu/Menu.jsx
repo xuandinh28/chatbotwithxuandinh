@@ -13,7 +13,7 @@ const Menu = () => {
                 Trang chủ
             </a>
             <a
-                href="https://www.npmjs.com/package/react-chatbot-kit"
+                href="/"
                 className="menu-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -21,7 +21,7 @@ const Menu = () => {
                 Menu
             </a>
             <a href="#examples" className="menu-link">
-                Ví dụ
+                Về chúng tôi
             </a>
             <a href="#tutorials" className="menu-link">
                 Tutorials
