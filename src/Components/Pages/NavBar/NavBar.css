@@ -81,15 +81,16 @@
     }
 }
 
-.head-info {
+/* .head-info {
 
-}
+} */
 .column {
     float: left;
-    width: 10%;
-    max-width: auto;
+    width: 100%;
+    max-width: 10vw;
     padding: 10px;
     height: auto;
+    max-height: 10vh;
     /* height: 20px; */
     /* background-color: #c8b4b4; */
     /* Should be removed. Only for demonstration */
