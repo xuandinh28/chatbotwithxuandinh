@@ -8,6 +8,7 @@
     border-radius: 3px;
     text-align: left;
     margin: 0.8rem 0;
+    height: auto;
 }
 
 .app-docs-container-header {

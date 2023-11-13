@@ -24,9 +24,11 @@ function App() {
   return (
     <div>
       <GradientBackground>
-        <NavBar />
         <Menu />
+        <NavBar />
         <HomePage />
+        <Footer />
+        
         <div className="App-chatbot-container">
           <ConditionallyRender
             ifTrue={showChatbot}
@@ -45,7 +47,7 @@ function App() {
         >
           <ButtonIcon className="app-chatbot-button-icon" />
         </button>
-        <Footer />
+        
       </GradientBackground>
 
     </div>

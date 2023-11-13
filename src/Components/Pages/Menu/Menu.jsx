@@ -1,33 +1,44 @@
 import React from "react";
 import "./Menu.css";
 
+import { ReactComponent as Logo } from "../../../Icons/logo.svg"
 const Menu = () => {
     return (
-        <div className="menu">
-            <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="menu-link"
-            >
-                Trang chủ
-            </a>
-            <a
-                href="/"
-                className="menu-link"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Menu
-            </a>
-            <a href="#examples" className="menu-link">
-                Về chúng tôi
-            </a>
-            <a href="#tutorials" className="menu-link">
-                Tutorials
-            </a>
+        <div >
+
+            <nav>
+                <ul>
+                    <li className="logo">
+                        <a href="/" className="logo"><Logo /></a>
+                    </li>
+                    <li>
+                        <a href="/">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="/">Làng Công nghệ</a>
+                    </li>
+                    <li>
+                        <a href="/">Công nghệ
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">Khoa học</a>
+                    </li>
+                    <li className="dropdown">
+                        <a href="/" className="dropbtn">Cuộc sống</a>
+                        <div className="dropdown-content">
+                            <a href="/">html</a>
+                            <a href="/">html</a>
+                            <a href="/">html</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+
         </div>
     );
-};
+}
 
 export default Menu;

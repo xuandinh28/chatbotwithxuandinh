@@ -10,6 +10,17 @@ const HomePage = () => {
             >
                 <p>Test Home Page</p>
             </DocsContainer>
+            
+            <DocsContainer
+                title={HomePage}
+            >
+                <p>Test Home Page</p>
+            </DocsContainer>
+            <DocsContainer
+                title={HomePage}
+            >
+                <p>Test Home Page</p>
+            </DocsContainer>
         </div>
     );
 }
