@@ -1,57 +1,75 @@
+import './App.css';
+
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css';
+
+import ActionProvider from "./bot/ActionProvider";
+import config from "./bot/config";
+import MessageParser from "./bot/MessageParser";
+
 import { ConditionallyRender } from "react-util-kit";
 import { useState } from 'react';
 
 
-import config from './BotConfig/config';
-import MessageParser from './BotConfig/MessageParser';
-import ActionProvider from './BotConfig/ActionProvider';
-import './App.css';
-
 import { ReactComponent as ButtonIcon } from './Icons/robot.svg';
 
-import GradientBackground from './Components/Pages/GradientBackground/GradientBackground.jsx';
-import NavBar from './Components/Pages/NavBar/NavBar.jsx';
-import Menu from './Components/Pages/Menu/Menu.jsx';
-import HomePage from './Components/Pages/Home/Home.jsx';
-import Footer from './Components/Pages/Footer/Footer.jsx';
 
-// import ExampleSection from './Components/PageSections/ExampleSection.jsx'
+import NavBar from "./components/NavBar";
+import Home from "../src/pages/Home";
+import Menu from "../src/pages/Menu";
+import About from "../src/pages/About";
+import Contact from "../src/pages/Contact";
+import Login from "../src/pages/Login";
+import SignUp from "../src/pages/SignUp";
+import Cart from "../src/pages/Cart";
+import NoPage from "../src/pages/NoPage";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import Footer from "./components/Footer";
+
+
 
 function App() {
   const [showChatbot, toggleChatbot] = useState(true);
   return (
-    <div>
-      <GradientBackground>
-        <Menu />
-        <NavBar />
-        <HomePage />
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<NavBar />}>
+            <Route index element={<Home />} />
+            <Route path="menu" element={<Menu />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="login" element={<Login />} />
+            <Route path="join" element={<SignUp />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
         <Footer />
-        
-        <div className="App-chatbot-container">
-          <ConditionallyRender
-            ifTrue={showChatbot}
-            show={
-              <Chatbot
-                config={config}
-                messageParser={MessageParser}
-                actionProvider={ActionProvider}
-              />
-            }
-          />
-        </div>
-        <button
-          className="App-chatbot-button"
-          onClick={() => toggleChatbot((prev) => !prev)}
-        >
-          <ButtonIcon className="app-chatbot-button-icon" />
-        </button>
-        
-      </GradientBackground>
-
-    </div>
-
+      </BrowserRouter>
+      <div className="App-chatbot-container">
+        <ConditionallyRender
+          ifTrue={showChatbot}
+          show={
+            <Chatbot
+              config={config}
+              messageParser={MessageParser}
+              actionProvider={ActionProvider}
+            />
+          }
+        />
+      </div>
+      <button
+        className="App-chatbot-button"
+        onClick={() => toggleChatbot((prev) => !prev)}
+      >
+        <ButtonIcon className="app-chatbot-button-icon" />
+      </button>
+    </>
   );
 }
 
