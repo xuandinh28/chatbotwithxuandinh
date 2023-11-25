@@ -31,7 +31,7 @@ export default function FoodCard({ foodItem }) {
                                     }}
                                 >Add To Cart</button>
                             )}
-                            <button className="btn border-0">Rs {foodItem.foodPrice}</button>
+                            <button className="btn border-0"> {foodItem.foodPrice} VND</button>
                         </div>
                     </div>
                 </div>

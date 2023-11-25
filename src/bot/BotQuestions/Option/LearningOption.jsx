@@ -5,14 +5,22 @@ import "./LearningOption.css";
 const LearningOptions = (props) => {
     const options = [
         { 
-            text: "Javascript", 
-            handler: props.actionProvider.handleExampleSection, 
+            text: "Pizza", 
+            handler: props.actionProvider.handlePizza, 
             id: 1, 
         },
-        { text: "Data visualization", handler: () => { }, id: 2 },
-        { text: "APIs", handler: () => { }, id: 3 },
-        { text: "Security", handler: () => { }, id: 4 },
-        { text: "Interview prep", handler: () => { }, id: 5 },
+        { text: "Burger", 
+            handler: props.actionProvider.handleExampleSection, 
+            id: 2 
+        },
+        { text: "Pasta", 
+            handler: props.actionProvider.handleExampleSection, 
+            id: 3 },
+        { text: "Cola", 
+            handler: props.actionProvider.handleExampleSection,
+            id: 4 },
+        /*{ text: "Interview prep", handler: () => { }, id: 5 },*/
+        /*{ text: "Interview prep", handler: () => { }, id: 6 },*/
     ];
 
     const optionsMarkup = options.map((option) => (

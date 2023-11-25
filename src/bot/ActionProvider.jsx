@@ -7,12 +7,26 @@ class ActionProvider {
     }
 
     greet() {
-        const greetingMessage = this.createChatBotMessage("Hi, friend.")
+        const greetingMessage = this.createChatBotMessage("Heo Béo xin chào ạ!")
         this.updateChatbotState(greetingMessage)
     }
+    /*greet() {
+        const greetingMessage = this.createChatBotMessage("Khách hàng cần trợ giúp gì ạ?")
+        this.updateChatbotState(greetingMessage)
+    }*/
     handleExampleSection = () => {
         const message = this.createChatBotMessage(
-            "Fantastic, I've got the following resources for you on Javascript:",
+            "het hang ok",
+            {
+                widget: "JavaScriptLinks",
+            }
+        );
+
+        this.updateChatbotState(message);
+    };
+    handlePizza = () => {
+        const message = this.createChatBotMessage(
+            "het hang Pizza",
             {
                 widget: "JavaScriptLinks",
             }

@@ -18,12 +18,12 @@ export default function Menu() {
   return (
     <>
       <div className="mt-5 col-10 mx-auto d-flex flex-column justify-content-center align-items-center">
-        <h1 className="text-center mb-4">Our Menu</h1>
+        <h1 className="text-center mb-4">Thực Đơn</h1>
         <div className="search-item col-8 d-flex gap-3">
           <input
             type="text"
             className="form-control search-bar"
-            placeholder="Search Food 🍲"
+            placeholder="Tìm nhanh 🍲"
             value={searchItem}
             onChange={searchItems}
           />
@@ -42,7 +42,7 @@ export default function Menu() {
                 )
               })
             ) : (
-              <p className="text-center fs-4">Sorry, No match found 😢 </p>
+              <p className="text-center fs-4">Xin lỗi món này Heo Béo chưa kinh doanh 😢 </p>
             )}
           </div>
         </div>

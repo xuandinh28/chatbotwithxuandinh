@@ -5,10 +5,10 @@ import Common from '../components/Common';
 export default function Home() {
   return (
     <Common
-      title="Order Tasty & Fresh Food "
-      coloredText="anytime 🍲"
-      bodyText="Our job is to filling your tummy with delicious food and with fast and free delivery."
-      btnText="See Our Menu 🍔"
+      title="Nhanh Chóng & Tiện Lợi"
+      coloredText1="mọi nơi 🍲"
+      bodyText="Việc của chúng tôi là lắp đầy cái bụng của bạn bằng nhữn món ăn ngon và giao hàng một cách nhanh chóng."
+      btnText="Xem Thực Đơn 🍔"
       btnLink="/menu"
       img={headerImg}
     />

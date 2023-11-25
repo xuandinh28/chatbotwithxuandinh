@@ -12,7 +12,8 @@ export default function Common(props) {
           <div className="row">
             <div className="col-10 row mx-auto justify-content-center align-items-center">
               <div className="col-md-6 pt-5 pt-lg-0 d-flex flex-column justify-content-center">
-                <h1>{props.title}<strong className="colored-text">{props.coloredText}</strong> </h1>
+                <h1>{props.title} <strong className="colored-text">{props.coloredText}</strong></h1>
+                <h1><strong className="colored-text">{props.coloredText1}</strong></h1>
                 <h2 className="my-3">{props.bodyText}</h2>
                 <div className="mt-3">
                   <Link to={props.btnLink} className="btn-see-menu">{props.btnText}</Link>

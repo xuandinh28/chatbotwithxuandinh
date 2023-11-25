@@ -5,18 +5,17 @@ import Common from '../components/Common';
 export default function About() {
   return (
     <Common
-      title="See how we get "
-      coloredText="started ⌛"
-      bodyText = {<>We welcome you to sit back, unwind and appreciate the lovely sights 
-      and hints of the ocean while our best gourmet expert sets you up a scrumptious dinner 
-      utilizing the best and freshest ingredients. ChillGrill legacy comes from The parent 
-      Restaurant which was built up in 1963.
+      title="Quá trình "
+      coloredText="hình thành ⌛"
+      bodyText={<>Heo Béo, một ngôi nhà hàng nhỏ, hiện hữu chỉ trong vòng sáu tháng trở lại đây, 
+      đã nhanh chóng trở thành điểm đến yêu thích của cộng đồng. Từ việc chọn địa điểm, xây dựng, 
+      đến trang trí và thực đơn, mọi yếu tố đều được chăm sóc kỹ lưỡng.
       <br />
       <br />
-      ChillGrill was worked for people in general and has advanced into a combination between 
-      exquisite chic and contemporary fine charge. Enjoy our dazzling dishes and make the 
-      most of your eating background with us!</>}
-      btnText="Contact Here 📞"
+      Bước chân vào Heo Béo, bạn sẽ ngập tràn trong ánh đèn vàng nhẹ nhàng, tạo nên bầu không khí ấm áp và thân thiện. 
+      Các món ăn trên thực đơn đa dạng và hấp dẫn, từ những món truyền thống cho đến những sáng tạo mới, 
+      mang lại cho thực khách trải nghiệm ẩm thực độc đáo và thú vị.</>}
+      btnText="Liên hệ tại đây 📞"
       btnLink="/contact"
       img={restaurant}
     />

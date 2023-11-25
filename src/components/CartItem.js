@@ -46,7 +46,7 @@ export default function CartItem({ props }) {
                     </button>
                 </div>
                 <div className="col-md-2 col-sm-2 col-3 mt-sm-0 mt-3 text-center cart-item-price">
-                    <h5 className="m-0">{props.foodQuantity * props.foodPrice} Rs</h5>
+                    <h5 className="m-0">{props.foodQuantity * props.foodPrice}.000 VND</h5>
                 </div>
                 <div className="col-md-1 col-sm-1 col-3 mt-sm-0 mt-3 text-center cart-item-delete">
                     <button

@@ -28,7 +28,7 @@ Message : ${data.message}.`
   return (
     <>
       <div className="mt-5">
-        <h1 className="text-center">Contact Us</h1>
+        <h1 className="text-center">Liên hệ với chúng tôi</h1>
       </div>
       <div id="header" className="d-flex align-items-start pt-md-4 pt-0 contact-header">
         <div className="container-fluid">
@@ -75,7 +75,7 @@ Message : ${data.message}.`
                     value={data.message}
                     onChange={monitorInput}
                   ></textarea>
-                  <button type="submit" className="btn btn-primary mt-3 px-4" id="send-btn">Send</button>
+                  <button type="submit" className="btn btn-primary mt-3 px-4" id="send-btn">Gửi</button>
                 </form>
               </div>
             </div>
